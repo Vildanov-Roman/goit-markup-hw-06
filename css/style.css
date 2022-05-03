@@ -27,6 +27,10 @@
     --background-color-detail: rgba(33, 150, 243, 0.9);
     --background-color-modal: rgba(0, 0, 0, 0.2);
     --background-modal-icon: #000000;
+    --color-textarea: rgba(117, 117, 117, 0.5);
+    --border-color-textarea: rgba(33, 33, 33, 0.2);
+    
+    
 }
 
 
@@ -883,6 +887,7 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
+    padding: 40px;
 
 }
 
@@ -895,11 +900,146 @@ img {
     background-color: transparent;
 }
 
+
+.modal-icon {
+    fill: var(--color-icon);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+.modal-icon:hover,
+.modal-icon:focus {
+    fill: var(--bacground-hover-icon);
+}
+
 .is-hidden {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
-
 }
 
+.modal-title {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+    margin-bottom: 12px;
+}
+
+.modal-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 12px;
+    margin-bottom: 12px;
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input::placeholder,
+.modal-text::placeholder {
+    color: var(--color-textarea);
+}
+
+.modal-input:focus,
+.modal-input:hover {
+    border-color: var(--main-btn-color);
+}
+
+.modal-label {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--main-text-color);
+    display: block;
+    margin-bottom: 4px;
+}
+
+.modal-text {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: var(--color-textarea);
+    padding: 12px 16px;
+    width: 100%;
+    height: 120px;
+    border: 1px solid var(--border-color-textarea);
+    border-radius: 4px;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+.checkbox-field {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.checkbox-input {
+    margin-right: 7px;
+}
+
+.checkbox-text {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+}
+
+.checkbox-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--web-txt-color);
+}
+
+.madal-btn {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--txt-btn);
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    background-color: var(--main-btn-color);
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin: 0 auto;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.madal-btn:hover,
+.madal-btn:focus {
+    background-color: var(--activ-btn-color);
+}
 
