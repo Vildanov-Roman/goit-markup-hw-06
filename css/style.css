@@ -1057,7 +1057,6 @@ img {
 
 .checkbox-icon {
     fill: transparent;
-    border: 0.2px solid var(--txt-btn);
 }
 
 .checkbox-text span {
