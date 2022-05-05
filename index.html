@@ -515,15 +515,23 @@
               id="user-text"
               placeholder="Введите текст"
             ></textarea>
-            <fieldset class="checkbox-field">
-              <label for="checkbox">
-                <input class="checkbox-input" type="checkbox" name="checkbox" />
-              </label>
-              <p class="checkbox-text">
-                Соглашаюсь с рассылкой и принимаю
+            <div class="checkbox-field">
+              <input
+                class="checkbox-input visually-hidden"
+                type="checkbox"
+                name="policy"
+                id="checkbox"
+                value="policy"
+              />
+              <label for="checkbox" class="checkbox-text">
+                <span>
+                  <svg class="checkbox-icon" wedth="11" height="8">
+                    <use href="./img/icons.svg#icon-agree"></use>
+                  </svg> </span
+                >Соглашаюсь с рассылкой и принимаю
                 <a href="#" class="checkbox-link">Условия договора</a>
-              </p>
-            </fieldset>
+              </label>
+            </div>
           </div>
           <button class="madal-btn" type="submit">Отправить</button>
         </form>

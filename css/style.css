@@ -1016,10 +1016,8 @@ img {
     resize: none;
 }
 
-.checkbox-field {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
+.checkbox {
+    position: absolute;
 }
 
 .checkbox-input {
@@ -1027,14 +1025,56 @@ img {
 }
 
 .checkbox-text {
-    font-family: inherit;
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
+    display: flex;
+    align-items: center;
 }
+
+.checkbox-icon {
+    fill: #000000;
+}
+
+.checkbox-text span {
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--second-text-color);
+    border-radius: 3px;
+    margin-right: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.checkbox-input:checked + .checkbox-text span {
+    background-color: var(--bacground-hover-icon);
+    border: none;
+}
+
+
+.checkbox-input:checked + .checkbox-text .checkbox-icon {
+    fill: var(--bacground-color-icon);
+} 
+/* 
+.checkbox-text::before {
+    content: "";
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--second-text-color);
+    border-radius: 3px;
+    margin-right: 7px;
+}
+
+.checkbox-input:checked + .checkbox-text::before {
+    background-color: var(--bacground-hover-icon);
+    border: none;
+    background-image: url(../img/icon-agree.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+} */
 
 .checkbox-link {
     font-family: 'Roboto';
@@ -1044,6 +1084,7 @@ img {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--web-txt-color);
+    margin-left: 5px;
 }
 
 .madal-btn {
@@ -1074,4 +1115,3 @@ img {
 .madal-btn:focus {
     background-color: var(--activ-btn-color);
 }
-
