@@ -678,6 +678,17 @@ img {
     justify-content: center;
 }
 
+.footer-sub-item {
+    position: relative;
+}
+
+.footer-sub-icon {
+    position: absolute;
+    right: 28px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: var(--background-color);
+}
 
 .sub-input {
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -690,6 +701,17 @@ img {
 }
 
 .sub-button {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--txt-btn);
+    padding-left: 29px;
     width: 200px;
     height: 50px;
     background-color: var(--main-btn-color);
@@ -974,7 +996,7 @@ img {
 
 .input-icon {
     position: absolute;
-    left: 0;
+    left: 12px;
     top: 50%;
     transform: translateY(-50%);
 
@@ -1035,6 +1057,7 @@ img {
 
 .checkbox-icon {
     fill: transparent;
+    border: 0.2px solid var(--txt-btn);
 }
 
 .checkbox-text span {
@@ -1096,7 +1119,6 @@ img {
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--txt-btn);
-    display: flex;
     justify-content: center;
     width: 200px;
     height: 50px;
@@ -1114,3 +1136,5 @@ img {
 .madal-btn:focus {
     background-color: var(--activ-btn-color);
 }
+
+

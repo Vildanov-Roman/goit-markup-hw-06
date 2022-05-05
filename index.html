@@ -441,17 +441,20 @@
         <div class="footer-sub">
           <p class="footer-sub-text">Подпишитесь на рассылку</p>
           <ul class="footer-sub-list list">
-            <li>
+            <li class="footer-sub-item">
               <input class="sub-input" type="email" placeholder="E-mail" />
             </li>
-            <li>
+            <li class="footer-sub-item">
               <button class="sub-button" type="submit">Подписаться</button>
+              <svg class="footer-sub-icon" width="24" height="24">
+                <use href="./img/icons.svg#icon-icon-send"></use>
+              </svg>
             </li>
           </ul>
         </div>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-icon" width="11" height="11">
