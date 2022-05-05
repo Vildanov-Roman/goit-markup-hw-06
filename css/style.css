@@ -1119,6 +1119,7 @@ img {
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--txt-btn);
+    display: flex;
     justify-content: center;
     width: 200px;
     height: 50px;
