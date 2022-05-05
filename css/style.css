@@ -976,9 +976,8 @@ img {
     position: absolute;
     left: 0;
     top: 50%;
-    transform: translateX(50%);
+    transform: translateY(-50%);
 
-    ransition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
