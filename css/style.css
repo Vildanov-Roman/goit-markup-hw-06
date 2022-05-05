@@ -698,6 +698,7 @@ img {
     width: 358px;
     height: 50px;
     padding: 15px 295px 15px 16px;
+    color: var(--studio-txt-footer);
 }
 
 .sub-button {
