@@ -918,8 +918,8 @@ img {
     
 }
 
-.modal-input:hover .modal-icon,
-.modal-input:focus .modal-icon {
+.modal-icon:hover,
+.modal-icon:focus {
     fill: var(--bacground-hover-icon);
 }
 
@@ -972,12 +972,15 @@ img {
     position: relative;
 }
 
-.modal-icon {
+.input-icon {
     position: absolute;
     left: 12px;
     top: 50%;
-    transform: translatey(-50%);
+    transform: translateX(-50%);
+}
 
+.modal-input:focus .input-icon {
+    fill: currentColor;
 }
 
 .modal-label {
