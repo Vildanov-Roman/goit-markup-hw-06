@@ -951,7 +951,7 @@ img {
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    padding-left: 42px;
+    padding-left: 12px;
 
     transition-property: border-color;
     transition-duration: 250ms;
@@ -974,13 +974,17 @@ img {
 
 .input-icon {
     position: absolute;
-    left: 12px;
+    left: 0;
     top: 50%;
-    transform: translateX(-50%);
+    transform: translateX(50%);
+
+    ransition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:focus .input-icon {
-    fill: currentColor;
+.modal-input:focus + .input-icon {
+    fill: var(--bacground-hover-icon);
 }
 
 .modal-label {
